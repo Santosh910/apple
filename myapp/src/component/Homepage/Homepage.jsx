@@ -70,14 +70,58 @@ const Homepage = () => {
             <hr />
           </div>
           <div className="footer-list">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fugiat quibusdam eligendi architecto sint adipisci laboriosam dolorem sequi quidem laudantium, ullam animi exercitationem illo modi molestias, quo ea possimus at!</p>
-            <hr />
+            <ul className="list-1">
+              <h5>Shop</h5>
+              <li>store</li>
+              <li>mac</li>
+              <li>ipad</li>
+              <li>iphone</li>
+              <li>watch</li>
+              <li>airpods</li>
+              <li>airtag</li>
+            </ul>
+            <ul className="list-2">
+              <h5>account</h5>
+              <li>manage your apple id</li>
+              <li>apple store account</li>
+              <li>icloud.com</li>
+            </ul>
+            <ul className="list-3">
+              <h5>Apple Store</h5>
+              <li>Find a Store</li>
+              <li>Genius Bar</li>
+              <li>Today at Apple</li>
+              <li>Apple Camp</li>
+              <li>Apple Trade In</li>
+              <li>Ways to Buy</li>
+              <li>Recycling Programme</li>
+              <li>Order Status</li>
+              <li>Shopping Help</li>
+            </ul>
+            <ul className="list-4">
+              <h5>For Business</h5>
+              <li>Apple and Business</li>
+              <li>Shop for Business</li>
+              <h5>For Education</h5>
+              <li>Apple and Education</li>
+              <li>Shop for Education</li>
+              <li>Shop for University</li>
+            </ul>
+            <ul className="list-5">
+              <h5>Apple Values</h5>
+              <li>Accessibility</li>
+              <li>Education</li>
+              <li>Environment</li>
+              <li>Privacy</li>
+              <li>Supplier Responsibility</li>
+            </ul>
+           
           </div>
           <div className="footer-coprgt">
-            
+
             <p>India
               Copyright © 2023 Apple Inc. All rights reserved.Privacy Policy | Terms of Use | Sales Policy | Legal | Site Map</p>
-              <p>India</p>
+            <p>India</p>
           </div>
 
 

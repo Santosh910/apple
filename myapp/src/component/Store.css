@@ -1,0 +1,163 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    width: 100%;
+    background-color: rgb(245,245,247);
+}
+.navbar-store{
+    width: 100%;
+    height: 45px;
+    background-color:#f5f5f7;
+    position: sticky;
+    top: 0px;
+}
+.nav-list-st{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.nav-list-st ul{
+    padding-top: 10px;
+}
+.nav-list-st li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    color: black;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.discount-st{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    
+}
+.dis-text-st{
+    
+    width: 60%;
+    /* margin: auto; */
+    color: #181818;
+    margin-left: 20%;
+    padding-top: 15px;
+}
+.note-st{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.note-flex{
+    width: 70%;
+    height: 100px;
+    border: 1px solid #f5f5f7;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+}
+.note-flex span{
+    color: gray;
+}
+.note-flex h1{
+    text-align: start;
+}
+.visit-st{
+    display: flex;
+    margin-top: 20px;
+}
+.visit-st img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.visit-st p{
+    text-align: start;
+    list-style: none;
+    font-size: 15px;
+    align-items: center;
+}
+.product-st{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.prod-flex-st{
+    width: 85%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.prod-img-nm-st{
+    width: 100px;
+    height: 100px;
+    
+}
+.prod-img-nm-st img{
+    width: 100px;
+}
+.latest-pro{
+    width: 81%;
+    margin-bottom: 50px;
+    
+}
+.latest-pro-list, .latest-pro-list-s{
+    width: 100%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.latest-pro-head{
+    margin-bottom: 20px;
+}
+.latest-pro-head span{
+    color: gray;
+}
+.lst-iphone-15{
+    width: 400px;
+    height: 500px;
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-iphone-15-pro-202309?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1692910040844);
+    border-radius: 20px;
+    color: white;
+    text-align: start;
+    border: 1px solid black;
+   
+}
+.lst-iphone-15-h{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.lst-iphone-15-h h5{
+    margin-bottom: 10px;
+}
+
+.lst-iphone-15-h h2{
+    margin-bottom: 10px;
+}
+.lst-iphone-15-1{
+    width: 400px;
+    height: 500px;
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-iphone-15-202309?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1692719973220);
+    border-radius: 20px;
+    color: black;
+    text-align: start;
+    border: 1px solid white;
+}
+.lst-iphone-15-2{
+      width: 400px;
+    height: 500px;
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-watch-s9-202309_GEO_IN?wid=400&hei=500&fmt=jpeg&qlt=95&.v=1693501324197);
+    border-radius: 20px;
+    color: white;
+    text-align: start;
+    border: 1px solid black;
+}
+.lst-iphone-15-0s{
+    width: 500px;
+    height: 500px;
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-50-specialist-help-202305?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1684946879038);
+    border-radius: 20px;
+    color: black;
+    text-align: start;
+    border: 1px solid white;
+}
