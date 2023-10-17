@@ -1,7 +1,10 @@
 import React from 'react'
 import './Homepage.css'
+import { useNavigate } from 'react-router-dom'
 
 const Homepage = () => {
+
+  const router = useNavigate()
   return (
     <div className='container'>
       <div className="navbar">
@@ -30,7 +33,7 @@ const Homepage = () => {
           <a href="#">shop now</a>
         </div>
       </div>
-      <div className="backimg-ip">
+      <div className="backimg-ip" onClick={() => router(`/iphone15pro`)}>
         <div className="text-wrp">
           <h2>iPhone 15 Pro</h2>
           <h3>Titanium. So strong. So light. So Pro.</h3>
@@ -53,6 +56,7 @@ const Homepage = () => {
 
       </div>
       <div className="backimg-ip-2">
+        
         <div className="text-wrp-2">
           <img src="https://www.apple.com/v/home/be/images/logos/apple-watch-series-9/hero_logo_apple_watch_series_9__eg5xcrxghuaa_medium.png" alt="" />
           <h3>New camera.New design.Newphoria.</h3>
@@ -63,6 +67,7 @@ const Homepage = () => {
         </div>
 
       </div>
+      
       <div className="footer">
         <div className="footer-1">
           <div className="footer-1-1">
@@ -84,7 +89,7 @@ const Homepage = () => {
               <h5>account</h5>
               <li>manage your apple id</li>
               <li>apple store account</li>
-              <li>icloud.com</li>
+              <li onClick={() =>router('/icloud')}>icloud.com</li>
             </ul>
             <ul className="list-3">
               <h5>Apple Store</h5>
@@ -115,7 +120,7 @@ const Homepage = () => {
               <li>Privacy</li>
               <li>Supplier Responsibility</li>
             </ul>
-           
+
           </div>
           <div className="footer-coprgt">
 

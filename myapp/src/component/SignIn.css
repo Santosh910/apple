@@ -1,0 +1,91 @@
+.sign-no{
+    width: 650px;
+    height: 630px;
+    border: 1px solid #fdfdfd;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 17px 20px 40px 30px rgba(0,0,0,.21);
+    border-radius: 20px;
+    margin-bottom: 200px;
+}
+.sign-no img{
+    width: 180px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.sign-no h1{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.input-arrow{
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin: auto;
+    margin-bottom: 100px;
+   
+    
+}
+.input-arrow:hover{
+    border: 3px solid blue;
+}
+.input-arrow input{
+    border: none;
+    margin-right: 150px;
+    margin-top: 15px;
+    font-size: 18px;
+    width: 250px;
+    background: transparent;
+    outline: none;
+}
+.input-keep{
+    width: 160px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.anchor-pass{
+    margin-bottom: 15px;
+}
+.anchor-pass p{
+     text-decoration: none;
+     color: lightseagreen;
+     text-transform: capitalize;
+     cursor: pointer;
+     
+}
+.anchor-pass-1 p{
+    text-decoration: none;
+     margin-bottom: 20px;
+     color: lightseagreen;
+     text-transform: capitalize;
+     cursor: pointer;
+}
+
+
+
+
+
+.footer-icl{
+    width: 100%;
+    height: 60px;
+}
+.footer-icl-flex{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.ft-flex-1 li{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 13px;
+}
+.ft-flex-2 p{
+    font-size: 13px;
+}

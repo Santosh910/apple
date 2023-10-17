@@ -1,0 +1,11 @@
+.main{
+    margin-top: 100px;
+    position: relative;
+    margin-left: 200px;
+}
+.slide{
+    position: absolute;
+}
+.button-sld{
+    margin-left: 100px;
+}
