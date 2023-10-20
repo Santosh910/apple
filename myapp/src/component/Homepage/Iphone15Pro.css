@@ -138,3 +138,40 @@
     margin-top: 5px;
     font-size: 15px;
 }
+.vide-container{
+    max-width: 100%;
+    height: 650px;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.fea-cont-slide{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+  
+  
+    transition-duration: 500ms;
+}
+.arrow-fea-1{
+    position: absolute;
+    top: 50%;
+    transform: translateX(0);
+    transform: translateY(50%);
+    right: 20px;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: red;
+}
+.arrow-fea-2{
+    position: absolute;
+    top: 50%;
+    transform: translateX(0);
+    transform: translateY(50%);
+    left: 20px;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: red;
+}

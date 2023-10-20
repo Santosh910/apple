@@ -19,7 +19,7 @@ const Store = () => {
                         <li>accessories</li>
                         <li>support</li>
                         <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                        <li><i class="fa-regular fa-bag-shopping"></i></li>
+                        <li><i class="fa-solid fa-bag-shopping"></i></li>
                     </ul>
                 </div>
 

@@ -1,7 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Iphone15Pro.css'
 
 const Iphone15Pro = () => {
+    const videoSet = [
+        {
+           url: "https://www.apple.com/105/media/us/iphone-15-pro/2023/2f337511-a940-4b57-b89c-1512b7507777/anim/highlights-zoom/large.mp4"
+        },
+        {
+            url: "https://www.apple.com/105/media/us/iphone-15-pro/2023/2f337511-a940-4b57-b89c-1512b7507777/anim/highlights-action-button/large.mp4"
+        }
+    ]
+    const [currenIndex, setCurrentIndex] = useState(0);
+
+    const prevSlider = () => {
+        const isFirstDlide = currenIndex === 0;
+
+        const newIndex = isFirstDlide ? videoSet.length - 1 : currenIndex - 1
+        setCurrentIndex(newIndex)
+    }
+
+    const nextSlider = () => {
+        const isFirstDlide = currenIndex === videoSet.length - 1;
+
+        const newIndex = isFirstDlide ? 0 : currenIndex + 1
+        setCurrentIndex(newIndex)
+    }
+
     return (
         <div className='container-15pro'>
             <div className="navbar-15pro">
@@ -19,7 +43,7 @@ const Iphone15Pro = () => {
                         <li>accessories</li>
                         <li>support</li>
                         <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                        <li><i class="fa-regular fa-bag-shopping"></i></li>
+                        <li><i class="fa-solid fa-bag-shopping"></i></li>
                     </ul>
                 </div>
 
@@ -31,6 +55,8 @@ const Iphone15Pro = () => {
                     <a href="#">shop now</a>
                 </div>
             </div>
+
+
 
             <div className="backimg-ip-1-15pro">
                 <div className="text-wrp-1-15pro">
@@ -46,6 +72,19 @@ const Iphone15Pro = () => {
                 </div>
 
             </div>
+
+            <div className='vide-container'>
+                <div className="fea-cont-slide">
+                   <video src={"asset/large.mp4"}></video>
+                </div>
+                <div className="arrow-fea-1 ">
+                    <i onClick={prevSlider} class="fa-solid fa-circle-right"></i>
+                </div>
+                <div className="arrow-fea-2 ">
+                    <i onClick={nextSlider} class="fa-solid fa-circle-left"></i>
+                </div>
+            </div>
+
 
             <div className="footer-15pro">
                 <div className="footer-1-15pro">

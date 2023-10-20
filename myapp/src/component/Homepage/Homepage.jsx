@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './Homepage.css'
 import { useNavigate } from 'react-router-dom'
 
@@ -11,7 +12,7 @@ const Homepage = () => {
         <div className="nav-list">
           <ul>
             <li><i class="fa-brands fa-apple"></i></li>
-            <li>store</li>
+            <li onClick={() => router('/store')}>store</li>
             <li>mac</li>
             <li>ipad</li>
             <li>iphone</li>
@@ -22,7 +23,7 @@ const Homepage = () => {
             <li>accessories</li>
             <li>support</li>
             <li><i class="fa-solid fa-magnifying-glass"></i></li>
-            <li><i class="fa-regular fa-bag-shopping"></i></li>
+            <li><i onClick={() => router('/shop')}  class="fa-solid fa-bag-shopping"></i></li>
           </ul>
         </div>
 
