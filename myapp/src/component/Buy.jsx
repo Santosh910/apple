@@ -1,14 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
+import {useNavigate} from 'react-router-dom'
 import "./Buy.css"
 
 const Buy = () => {
-  return (
-    <div className='container-buy'>
+    const [product, setProduct] = useState([
+        {
+            title1: "iPhone 14 &",
+            title2: "iPhone 14 Pro Max",
+            image: "asset/iphone-14.jpg",
+            Emi: "From  ₹21483.00/mo.with instant savings"
+
+        },
+        {
+            title1: "iPhone 15 Pro &",
+            title2: "iPhone 15 Pro Max",
+            image: "asset/iphone-15pro-gray.jpg",
+            Emi: "From  ₹21483.00/mo.with instant savings"
+        },
+        {
+            title1: "iPhone 15 Pro &",
+            title2: "iPhone 15 Pro Max",
+            image: "asset/iphone-15pro.jpg",
+            Emi: "From  ₹21483.00/mo.with instant savings"
+        }
+    ])
+    const [sideNav, setSideNav] = useState(false)
+    console.log(sideNav)
+    const router = useNavigate()
+    return (
+        <div className='container-buy'>
             <div className="navbar-buy">
                 <div className="nav-list-buy">
                     <ul>
                         <li><i class="fa-brands fa-apple"></i></li>
-                        <li>store</li>
+                        <li onClick={() => router('/store')} >store</li>
                         <li>mac</li>
                         <li>ipad</li>
                         <li>iphone</li>
@@ -17,7 +42,7 @@ const Buy = () => {
                         <li>TV & Home</li>
                         <li>entertainment</li>
                         <li>accessories</li>
-                        <li>support</li>
+                        <li onClick={() => router('/icloud')}>support</li>
                         <li><i class="fa-solid fa-magnifying-glass"></i></li>
                         <li><i class="fa-solid fa-bag-shopping"></i></li>
                     </ul>
@@ -25,7 +50,7 @@ const Buy = () => {
 
             </div>
 
-            
+
             <div className="discount-buy">
                 <div className="dis-text-buy">
                     <h5>Get up to ₹8000.00 instant savings on selected products with eligible HDFC Bank cards.*</h5>
@@ -57,39 +82,109 @@ const Buy = () => {
                 </ul>
             </div>
 
-            <div className="latest-pro">
-                <div className="latest-pro-head">
-                    <h1>The latest. <span>Take a look at what’s new right now.</span> </h1>
+            <div className="latest-pro-buy">
+                <div className="latest-pro-head-buy">
+                    <h2>All models. <span>Take your pick.</span> </h2>
                 </div>
-                <div className="latest-pro-list">
-                    <div className="lst-iphone-15">
-                        <div className="lst-iphone-15-h">
-                            <h5>IPHONE 15PRO</h5>
-                            <h2>Titanium</h2>
-                            <h4>From <span>₹ 134900.00</span> </h4>
-                        </div>
+                <div className="latest-pro-list-buy" onClick={() => setSideNav(!sideNav)}  >
+                    {product.length &&
+                        <div className='single-flx-buy'>{product.map((pro) => (
+                            <div className='flexbox-buy'>
+                                <h3 style={{color:"orange",textAlign:"left",marginLeft:"30px"}}>New</h3>
+                                <h2>{pro.title1}</h2>
+                                <h2>{pro.title2}</h2>
+                                <img src={pro.image} />
+                                <h5>{pro.Emi} <button>Buy</button></h5>
+                            </div>))}
+                        </div>}
 
-                    </div>
-                    <div className="lst-iphone-15-1">
-                        <div className="lst-iphone-15-h">
-                            <h5>IPHONE 15PRO</h5>
-                            <h2>Titanium</h2>
-                            <h4>From <span>₹ 134900.00</span> </h4>
-                        </div>
-
-                    </div>
-                    <div className="lst-iphone-15-2">
-                        <div className="lst-iphone-15-h">
-                            <h5>IPHONE 15PRO</h5>
-                            <h2>Titanium</h2>
-                            <h4>From <span>₹ 134900.00</span> </h4>
-                        </div>
-
-                    </div>
                 </div>
             </div>
 
-            
+
+            {
+                sideNav ? (
+                    <div className='iphone-15pro-slide-buy' onClick={() => setSideNav(!sideNav)}></div>
+                ) : ("")
+            }
+            {
+                <div>
+                    {
+                        sideNav ?
+                            <div className="main-box-iphone-15">
+                                <div className="iphone-pro-bar">
+                                    <button>iPhone 15 Pro</button>
+                                </div>
+                                <div>
+                                    <i id='close-button' onClick={() => setSideNav(!sideNav)} class="fa-solid fa-xmark"></i>
+                                </div>
+
+                                <div className="i-phone-buy-box">
+                                    <div className="iphone-flex-lft-rgt">
+                                        <div className='iphone-left'>
+                                            <button>iPhone 15pro</button>
+                                            <img src="asset/iphone-15gray.png" alt="" />
+                                        </div>
+
+
+                                        <div className='iphone-right'>
+                                            <div className="ipn-rgt-1">
+                                                <h5>NEW</h5>
+                                                <h1>IPhone-15Pro</h1>
+                                                <h6>From ₹21483.00/mo.Per Month with instant savings§§<br />  and No Cost EMI§Footnote or ₹134900.00Footnote‡ <button>Buy</button></h6>
+                                            </div>
+                                            <div className="ipn-rgt-2">
+
+                                                <h4>15.5 cm (6.1-inch) Super Retina XDR display footnote ¹ featuring ProMotion, Always-On and Dynamic Island</h4>
+                                            </div>
+                                            <div className="ipn-rgt-2">
+
+                                                <h4>15.5 cm (6.1-inch) Super Retina XDR display footnote ¹ featuring ProMotion, Always-On and Dynamic Island</h4>
+                                            </div>
+                                            <div className="ipn-rgt-2">
+
+                                                <h4>15.5 cm (6.1-inch) Super Retina XDR display footnote ¹ featuring ProMotion, Always-On and Dynamic Island</h4>
+                                            </div>
+                                            <div className="ipn-rgt-2">
+
+                                                <h4>15.5 cm (6.1-inch) Super Retina XDR display footnote ¹ featuring ProMotion, Always-On and Dynamic Island</h4>
+                                            </div>
+                                            <div className="ipn-rgt-2">
+
+                                                <h4>15.5 cm (6.1-inch) Super Retina XDR display footnote ¹ featuring ProMotion, Always-On and Dynamic Island</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="iphone-flex-bottom">
+                                        <div className="iph-flex-1-btm">
+                                            <i class="fa-regular fa-credit-card" style={{ color: "#36ba1c" }}></i>
+                                            <div className="emi-pay">
+                                                <h4>Flexible ways to pay</h4>
+                                                <h5>No Cost EMI§ and EMI◊◊ available.</h5>
+                                            </div>
+                                        </div>
+                                        <div className="iph-flex-1-btm">
+
+                                        </div>
+                                        <div className="iph-flex-1-btm">
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                            :
+                            <div className="sidebar-dontshow"><i id='close-button' onClick={() => setSideNav(!sideNav)} class="fa-solid fa-xmark"></i></div>
+                    }
+                </div>
+            }
+
+
             <div className="footer">
                 <div className="footer-1">
                     <div className="footer-1-1">
@@ -155,8 +250,8 @@ const Buy = () => {
                 </div>
             </div>
 
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Buy

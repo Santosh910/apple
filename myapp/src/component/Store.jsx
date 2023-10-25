@@ -1,7 +1,9 @@
 import React from 'react'
 import './Store.css'
+import { useNavigate } from 'react-router-dom'
 
 const Store = () => {
+    const router = useNavigate()
     return (
         <div className='container'>
             <div className="navbar-store">
@@ -51,7 +53,7 @@ const Store = () => {
                         <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-14-16-mac-nav-202301?wid=200&hei=130&fmt=png-alpha&.v=1670959891635" alt="" />
                         <h5>Mac</h5>
                     </div>
-                    <div className="prod-img-nm-st">
+                    <div onClick={() => router('/buy')} className="prod-img-nm-st">
                         <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-iphone-nav-202309_GEO_EMEA?wid=200&hei=130&fmt=png-alpha&.v=1692971740071" alt="" />
                         <h5>Iphone</h5>
                     </div>

@@ -1,14 +1,17 @@
 import React from 'react'
 import './Shop.css'
+import { useNavigate } from 'react-router-dom'
 
 const Shop = () => {
+
+    const router = useNavigate()
     return (
         <div className='container-shop'>
             <div className="navbar-shop">
                 <div className="nav-list-shop">
                     <ul>
                         <li><i class="fa-brands fa-apple"></i></li>
-                        <li>store</li>
+                        <li onClick={() => router('/store')} >store</li>
                         <li>mac</li>
                         <li>ipad</li>
                         <li>iphone</li>
@@ -17,7 +20,7 @@ const Shop = () => {
                         <li>TV & Home</li>
                         <li>entertainment</li>
                         <li>accessories</li>
-                        <li>support</li>
+                        <li onClick={() => router('/icloud')}>support</li>
                         <li><i class="fa-solid fa-magnifying-glass"></i></li>
                         <li><i class="fa-solid fa-bag-shopping"></i></li>
                     </ul>
