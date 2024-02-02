@@ -8,6 +8,7 @@ import Icloud from './component/Icloud';
 import SignIn from './component/SignIn';
 import Shop from './component/Shop';
 import Buy from './component/Buy';
+import Register from './component/Register';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/signin' element={<SignIn/>}/>
         <Route exact path='/shop' element={<Shop/>}/>
         <Route exact path='/buy' element={<Buy/>}/>
+        <Route exact path='/register' element={<Register/>}/>
       </Routes>
     </div>
   );
